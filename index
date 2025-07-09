@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -37,4 +37,62 @@
       max-width: 1000px;
       margin: auto;
     }
-    foot
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .image-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Patriarch Water Works</h1>
+    <p>Purity Perfected. Service That Works.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="request.html">Request Service</a>
+  </nav>
+
+  <main>
+    <h2>Welcome</h2>
+    <p>We specialize in residential and commercial water treatment systems including reverse osmosis, water softeners, well pumps, and more. Serving Florida with honesty, integrity, and expert solutions.</p>
+
+    <h3>Our Work</h3>
+    <div class="image-grid">
+      <img src="images/20240329_144827.jpg" alt="RO install" />
+      <img src="images/20240331_113241.jpg" alt="Softener setup" />
+      <img src="images/20240426_155928_1.jpg" alt="Tank system" />
+      <img src="images/20241124_123112.jpg" alt="Covered tank" />
+      <img src="images/20250125_175552.jpg" alt="Outdoor tank" />
+      <img src="images/20250131_175311.jpg" alt="Drilled well" />
+      <img src="images/20250320_182550.jpg" alt="Triplex booster" />
+      <img src="images/20250526_120244.jpg" alt="System install" />
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Patriarch Water Works. All rights reserved.</p>
+  </footer>
+</body>
+</html>
